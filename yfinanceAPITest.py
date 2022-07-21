@@ -3,9 +3,9 @@ import pandas
 import sqlalchemy
 import psycopg2
 from sqlalchemy import create_engine
-
+#Below user/password/Port No. edited out for privacy
 #from sqlalchemy import create_engine
-#engine = sqlalchemy.create_engine('postgresql://username:password@localhost:5432/Investment Analysis Project')
+#engine = sqlalchemy.create_engine('postgresql://USER:PASSWORD@localhost:PORT_NO./Investment Analysis Project')
 
 #df.to_sql('table_name', engine)
 
@@ -18,9 +18,9 @@ balanceSheet = aapl.balance_sheet
 cashFlow = aapl.cashflow
 
 earnings = aapl.earnings
-
+# username/password and port no. edited out for privacy
 #Define connection string (if being pushed to github create a config.py file to hold variables!!!)
-DATABASE_URI = 'postgresql+psycopg2://postgres:password@localhost:5432/Investment Analysis Project'
+DATABASE_URI = 'postgresql+psycopg2://USERNAME:PASSWORD@PORT_NO./Investment Analysis Project'
 
 # SQL Engine
 engine = create_engine(DATABASE_URI)
